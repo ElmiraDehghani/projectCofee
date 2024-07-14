@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+:root{
+    --main-color:#f65329;
+    ---color-text:#bb843c;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header*/
+.navbar{
+    width: 100%;
+    top: 0;
+}
+.nav-item-right{
+    right: 0;
+}
+.nav-item .nav-link{
+    color: black;
+}
+.nav-item .nav-link:hover{
+    opacity: 0.5;
+}
+/*section*/
+
+.row{
+    --bs-gutter-x:0;
+}
+.col-right{
+    background-color: var(--main-color);
+   position: absolute;
+    top: 0;
+   right: 0;
+   width: 35%;
+    z-index: -1;
+}
+.col-md-6{
+    align-items: center !important;
+    justify-content: center !important;
+}
+.img-box{
+    box-shadow: -5px 5px 7px rgb(49, 27, 11), 20px 8px 5px #b13c1e,40px 8px 5px #b13b1e85 ;
+    margin-right: 30% !important;
+    border-radius: 50%;
+}
+.margin-top-12{
+    margin-top: 12%;
+}
+
+.text-content-right{
+    display: flex;
+    flex-direction: column;
+}
+.text-bottom{
+    position: absolute;
+    bottom: 4%;
+    right:  3%;
+    transform: rotate(-90deg);
+}
+small{
+    font-size: 80%;
+}
+.text-content h1{
+    font-size: 700%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: var(---color-text);
+    line-height: 0.8;
+}
+.text-content h2{
+    font-family:'Courier New', Courier, monospace;
+    font-weight:900;
+}
+.border-in{
+    width: 27%;
+    border: 1px solid;
+    display: inline;
+    top: 11px;
+} 
+.text-left{
+    float: left;
+}
+.tell{
+   top: 37%;
+   left: 0%;
+    transform: rotate(-90deg);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ #rl{
+   color: var(---color-text);
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: 4%;
+    left: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+.content-text small{
+   font-size: 75%;  
+}
+@media (max-width:1300px) {
+    .img-box {
+      width: 77%;
+      margin-right: 0%;
+    }
+    .text-content-right {
+        top: 33%;
+    }
+    .text-content h1{
+        font-size: 500%;
+
+    }
+}
+@media (max-width:1100px) {
+    .col-md-6 p{
+        font-size: 13px;
+    }
+    .img-box {
+        box-shadow: -2px 2px 7px rgb(49, 27, 11), 15px 8px 5px #b13c1e,30px 8px 5px #b13b1e85;
+    }
+    .border-in {
+        font-size: 14px;
+    }
+}
+@media (max-width:1060px) {
+    .text-content h1{
+        font-size: 400%;
+    }
+}
+@media (max-width:992px) {
+    .col-md-6 p{
+        font-size: 12px;
+    }
+}
+@media (max-width:800px) {
+    .col-md-6 p{
+        font-size: 11px;
+    }
+}
+@media (max-width:768px) {
+   .navbar > .container-fluid{
+    justify-content: start;
+    }
+    .img-box {
+        width: 50%;
+    }
+    .text-content-right{
+        padding-right: 1rem;
+    }
+    .mt{
+        margin: 5% 0;
+    }
+    .img-boox {
+        width: 70%;
+        height: 400px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    } 
+    .img-box{
+        box-shadow: 2px 2px 6px rgb(36, 35, 35);
+       margin-right: 0 !important;
+    }
+    .text-bottom, #rl, .tell{
+        display: none;
+    }
+     .col-right{
+        height: 50% !important;
+    }
+    .col-md-6:nth-child(2) {
+        margin:  5% 0 0 0;
+    }
+    .col-md-6 p {
+        font-size: 15px;
+    padding: 1%;
+    }
+    .border-out {
+        padding: 3% 8%;
+    }
+    .border-in {
+         top: 10px;
+        padding: 2px;
+    }
+}
+@media (max-width: 678px) {
+    .border-in {
+      top: 7px;
+    }
+      .col-md-6 p {
+        font-size: 14px;
+    }
+        #margin-left{
+            margin-left: 0;
+        }
+}
+@media (max-width: 600px) {
+    .border-out {
+        padding: 3.5% 8%;
+    }
+}
+@media (max-width: 576px) {
+    .border-out {
+    border: none;
+    }
+    .border-in {
+        top: 0px;
+        font-size: 10px;
+    }
+    }
+@media (max-width: 530px) {
+    .img-boox {
+        height: 350px;
+    }
+}
+@media (max-width: 470px) {
+    .col-md-6 p {
+        font-size: 12px;
+    }
+     .text-content h1 {
+    font-size: 300%;
+    }
+}
+@media (max-width: 530px) {
+    .img-boox {
+    height: 300px;
+    }
+}
+@media (max-width: 430px) {
+    .img-boox {
+        height: 250px;
+    }
+}
+@media (max-width: 395px) {
+    .col-md-6 p {
+        font-size: 10px;}
+}
+@media (max-width: 350px) {
+    .mt {
+        margin: 7% 0;
+        }
+        .img-boox {
+            height: 250px;
+        }
+}
